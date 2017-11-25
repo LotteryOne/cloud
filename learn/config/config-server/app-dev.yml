@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: fun-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          search-paths:
+          username:
+          password:
+
+
+logging:
+  path: E:/log
