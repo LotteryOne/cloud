@@ -5,10 +5,11 @@ spring:
     config:
       server:
         git:
-          uri:
-          search-paths:
+          uri: https://github.com/cloudgc/cloud
+          search-paths: learn/config
           username: xuanag
           password: 123
+
 
 
 logging:
