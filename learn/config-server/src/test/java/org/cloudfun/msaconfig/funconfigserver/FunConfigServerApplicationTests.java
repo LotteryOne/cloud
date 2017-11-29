@@ -1,5 +1,6 @@
 package org.cloudfun.msaconfig.funconfigserver;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,9 +24,10 @@ public class FunConfigServerApplicationTests {
     WebApplicationContext webApplicationConnect;
 
     @Before
-    public void loadResource() {
+    public void loadResource(){
         mvc = MockMvcBuilders.webAppContextSetup(webApplicationConnect).build();
     }
+
 
 
     @Test
@@ -37,7 +39,8 @@ public class FunConfigServerApplicationTests {
 //        String content = mvcResult.getResponse().getContentAsString();
         int status = mvcResult.getResponse().getStatus();
 
-        Assert.assertEquals(status, 200);
+        Assert.assertEquals(status,200);
+
 
 
     }
