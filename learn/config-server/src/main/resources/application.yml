@@ -16,7 +16,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/cloudgc/cloud
+          uri: https://github.com/LotteryOne/cloud
           search-paths: learn/config
           username: xuanfengshizi@163.com
           password: '{cipher}AQA8MlO/r2nstSdNNv+H1PScV7yw/TL5aCAFFrypOGbS6MMT1QQ1CQrcKPFi5hf5+DX9H8BVBR/FfM2V3X83Z7L7zdqkMiKlum/KAtn6WeomEeIE0njSuNY1SGnWhgh+Dkhrx0+B1FuxRi2vpfPUL843y3y5XwKWuq+5oC2KSdAwUdvvn5UqwAnWJw6bqYyxgm95wKXnSZPSsx5Ca7CQDXMWB6SI4Wn7KSA0npyVAHVZLmJ99+fshVsywftQz8Tm2P+Wkhjgvp1VztNXp/jncOPjPhTsuFMQdk8m0BDAO0XJSAJIhKNGb/3ftiHa6aAhJ2x0QXko1qOUTdu3au/vLk75uZE3FAXA+2Fz2MDbkZan7Y7b7lCRDNqUUA2QIEtKc/8='
