@@ -11,9 +11,6 @@
 
     <property name="APP_FILE_A"
          value="${APP_FILE_A:-%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [${APP_NAME},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] - [%t] %-40.40logger{39} [%L]: %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
-    <property name="APP_FILE_B"
-              value="${APP_FILE_B:-%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [${APP_NAME},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] - [%t] %-40.40logger{39} [%L]: %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
-
 
     <property name="APP_COLOR_A"
               value="${APP_COLOR_A:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p [${APP_NAME},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}]) - %clr([%t]){magenta} %clr(%-40.40logger{39}){cyan} %clr([%L]){cyan}: %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
@@ -31,7 +28,7 @@
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- compress log file ***.log.gz -->
-            <FileNamePattern>${LOG_HOME}/${APP_NAME}-%d{yyyyMMddHHmm}.%i.log.gz</FileNamePattern>
+            <FileNamePattern>${LOG_HOME}/${APP_NAME}-%d{yyyyMMdd}.%i.log.gz</FileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>200MB</maxFileSize>
