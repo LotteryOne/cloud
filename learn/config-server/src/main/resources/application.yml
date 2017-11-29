@@ -27,7 +27,3 @@ spring:
 #logging:
 #  path: /log
 #  config: classpath:logback-spring.xml
-
-
-
-
