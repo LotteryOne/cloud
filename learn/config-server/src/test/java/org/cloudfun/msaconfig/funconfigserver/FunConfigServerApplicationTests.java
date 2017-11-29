@@ -23,22 +23,21 @@ public class FunConfigServerApplicationTests {
     WebApplicationContext webApplicationConnect;
 
     @Before
-    public void loadResource(){
+    public void loadResource() {
         mvc = MockMvcBuilders.webAppContextSetup(webApplicationConnect).build();
     }
 
 
-
     @Test
     public void contextLoads() throws Exception {
-        String expectedResult = "hello world!";
-        String uri = "/logf";
+        String uri = "/config-server/dev";
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri).accept(MediaType.APPLICATION_JSON))
                 .andReturn();
 
-        String content = mvcResult.getResponse().getContentAsString();
+//        String content = mvcResult.getResponse().getContentAsString();
         int status = mvcResult.getResponse().getStatus();
 
+        Assert.assertEquals(status, 200);
 
 
     }
