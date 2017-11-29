@@ -2,4 +2,4 @@ spring:
   application:
     name: config-server
 logging:
-  path: E:/log
+  path: /log
